@@ -1,5 +1,6 @@
 import argparse
 import json
+import sys
 
 from hw3.file_handling import *
 from hw3.utilities import *
@@ -9,10 +10,14 @@ script_dir = osp.dirname(__file__)
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("src_file", help="csv file of ponies' dialogs to be analyzed.")
+    parser.add_argument("-o", default="", help="Where should the output json file be generated? If not provided, print to stdout")
+    if len(sys.argv)==1:
+        parser.print_help()
+        sys.exit(1)
     args = parser.parse_args()
-
-
-    src_file = osp.join(script_dir, "..", "data", "clean_dialog.csv")
+    #src_file = osp.join(script_dir, "..", "data", "clean_dialog.csv")
+    src_file=args.src_file
     dict_words_path = osp.join(script_dir, "..", "data", "words_alpha.txt")
     dict_words = set()
     with open(dict_words_path) as file:
@@ -27,9 +32,11 @@ def main():
                              "mentions": mentions,
                              "follow_on_comments": follow,
                              "non_dictionary_words": non_dict}, indent=2)
-    print(final_json)
-    with open("sample.json", "w") as outfile:
-        outfile.write(final_json)
+    if not args.o:
+        print(final_json)
+    else:
+        with open(args.o, "w") as outfile:
+            outfile.write(final_json)
 
 
 if __name__ == "__main__":
