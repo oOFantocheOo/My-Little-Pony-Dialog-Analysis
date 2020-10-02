@@ -42,9 +42,6 @@ def parse_words(dialog):
     '''
     Given a dialog, return an array of words in the dialog
     '''
-
-    return re.sub(r'\W+', ' ', dialog).split()
-
     filtered_dialog = re.sub(r"<U\+\d{4}>", " ", dialog)
     arr = re.findall(r"\w+|[^\w\s]", filtered_dialog, re.UNICODE)
     for i in range(len(arr))[::-1]:

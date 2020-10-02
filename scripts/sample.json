@@ -106,43 +106,43 @@
       "ve",
       "Celestia",
       "Fluttershy",
-      "0097",
-      "Equestria"
+      "Equestria",
+      "everypony"
     ],
     "applejack": [
       "ve",
       "somethin",
       "doin",
       "everypony",
-      "0096"
+      "Fluttershy"
     ],
     "rarity": [
       "ve",
-      "0097",
-      "0096",
       "Fluttershy",
-      "Canterlot"
+      "Canterlot",
+      "Equestria",
+      "somepony"
     ],
     "pinkie": [
       "ve",
       "Fluttershy",
       "Ponyville",
       "everypony",
-      "0096"
+      "Equestria"
     ],
     "rainbow": [
       "ve",
       "Fluttershy",
       "Wonderbolts",
-      "0096",
-      "Ponyville"
+      "Ponyville",
+      "everypony"
     ],
     "fluttershy": [
       "ve",
-      "0097",
       "everypony",
-      "0096",
-      "Fluttershy"
+      "Fluttershy",
+      "Equestria",
+      "somepony"
     ]
   }
 }
