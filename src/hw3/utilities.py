@@ -21,7 +21,7 @@ def get_verbosity(df_arr):
             if row["pony"] in names:
                 d[names[row["pony"]]] += 1
     for k in d.keys():
-        d[k] = d[k] / total_cnt
+        d[k] = round(d[k] / total_cnt,2)
     return d
 
 
@@ -183,5 +183,5 @@ def count_dict_to_percent_dict(d):
             d[k] = 0.0
     else:
         for k in d.keys():
-            d[k] = d[k] / sm
+            d[k] = round(d[k] / sm,2)
     return d
