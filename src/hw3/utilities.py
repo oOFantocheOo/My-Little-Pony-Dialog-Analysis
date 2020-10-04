@@ -20,10 +20,9 @@ def get_verbosity(df_arr):
             total_cnt += 1
             if row["pony"] in names:
                 d[names[row["pony"]]] += 1
-    for k in d.keys():
-        d[k] = round(d[k] / total_cnt,2)
-    return d
-
+    #for k in d.keys():
+    #    d[k] = round(d[k] / total_cnt,2)
+    return count_dict_to_percent_dict(d)
 
 def get_mentions(df_arr):
     d = {"twilight": {"applejack": 0,
@@ -162,7 +161,7 @@ def get_non_dict_words(df_arr, dictionary):
                 speaker = names[row["pony"]]
                 for w in words:
                     if w.lower() not in dictionary:
-                        d[speaker][w] += 1
+                        d[speaker][w.lower()] += 1
     res = {}
     for k in d.keys():
         most_common_tuple = d[k].most_common(5)

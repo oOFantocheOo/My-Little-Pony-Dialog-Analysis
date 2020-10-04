@@ -7,7 +7,6 @@ from hw3.utilities import *
 
 script_dir = osp.dirname(__file__)
 
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("src_file", help="csv file of ponies' dialogs to be analyzed.")
