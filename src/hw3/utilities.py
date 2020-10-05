@@ -80,8 +80,17 @@ def get_mentions(df_arr):
                         called = names_called[w]
                         if speaker != called:
                             d[speaker][called] += 1
-    for k in d.keys():
-        d[k] = count_dict_to_percent_dict(d[k])
+                for i in range(1,len(words)):
+                    w1,w2,speaker=words[i-1],words[i],names_speaker[row["pony"]]
+                    if w1=="Twilight" and w2=="Sparkle" and speaker!="twilight":
+                        d[speaker]["twilight"]-=1
+                    elif w1=="Rainbow" and w2=="Dash" and speaker!="rainbow":
+                        d[speaker]["rainbow"]-=1
+                    elif w1=="Pinkie" and w2=="Pie" and speaker!="pinkie":
+                        d[speaker]["pinkie"]-=1
+
+#    for k in d.keys():
+#        d[k] = count_dict_to_percent_dict(d[k])
     return d
 
 

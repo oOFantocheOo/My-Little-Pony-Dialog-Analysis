@@ -9,46 +9,46 @@
   },
   "mentions": {
     "twilight": {
-      "applejack": 0.15,
-      "rarity": 0.17,
-      "pinkie": 0.3,
-      "rainbow": 0.2,
-      "fluttershy": 0.17
+      "applejack": 108,
+      "rarity": 117,
+      "pinkie": 212,
+      "rainbow": 141,
+      "fluttershy": 121
     },
     "applejack": {
-      "twilight": 0.27,
-      "rarity": 0.21,
-      "pinkie": 0.25,
-      "rainbow": 0.17,
-      "fluttershy": 0.11
+      "twilight": 99,
+      "rarity": 76,
+      "pinkie": 92,
+      "rainbow": 64,
+      "fluttershy": 39
     },
     "rarity": {
-      "twilight": 0.23,
-      "applejack": 0.26,
-      "pinkie": 0.17,
-      "rainbow": 0.18,
-      "fluttershy": 0.16
+      "twilight": 82,
+      "applejack": 95,
+      "pinkie": 62,
+      "rainbow": 65,
+      "fluttershy": 60
     },
     "pinkie": {
-      "twilight": 0.3,
-      "applejack": 0.15,
-      "rarity": 0.14,
-      "rainbow": 0.27,
-      "fluttershy": 0.14
+      "twilight": 119,
+      "applejack": 58,
+      "rarity": 55,
+      "rainbow": 104,
+      "fluttershy": 55
     },
     "rainbow": {
-      "twilight": 0.22,
-      "applejack": 0.17,
-      "rarity": 0.1,
-      "pinkie": 0.29,
-      "fluttershy": 0.22
+      "twilight": 74,
+      "applejack": 59,
+      "rarity": 36,
+      "pinkie": 100,
+      "fluttershy": 75
     },
     "fluttershy": {
-      "twilight": 0.32,
-      "applejack": 0.09,
-      "rarity": 0.23,
-      "pinkie": 0.14,
-      "rainbow": 0.22
+      "twilight": 66,
+      "applejack": 19,
+      "rarity": 47,
+      "pinkie": 29,
+      "rainbow": 46
     }
   },
   "follow_on_comments": {
