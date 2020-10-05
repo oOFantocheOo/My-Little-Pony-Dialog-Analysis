@@ -34,9 +34,12 @@ def main():
     if not args.o:
         print(final_json)
     else:
-        with open(args.o, "w") as outfile:
-            outfile.write(final_json)
-
+        dictionary={"verbosity": verbosity,
+                    "mentions": mentions,
+                    "follow_on_comments": follow,
+                    "non_dictionary_words": non_dict}
+        with open(args.o, 'w', encoding='utf-8') as f:
+            json.dump(dictionary, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
     main()

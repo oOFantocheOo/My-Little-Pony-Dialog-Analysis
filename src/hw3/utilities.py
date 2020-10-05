@@ -89,8 +89,8 @@ def get_mentions(df_arr):
                     elif w1=="Pinkie" and w2=="Pie" and speaker!="pinkie":
                         d[speaker]["pinkie"]-=1
 
-#    for k in d.keys():
-#        d[k] = count_dict_to_percent_dict(d[k])
+    for k in d.keys():
+        d[k] = count_dict_to_percent_dict(d[k])
     return d
 
 
